@@ -1,0 +1,39 @@
+.avatarContainer {
+  height: auto;
+
+  .avatarIcon {
+    color: #ddd;
+    cursor: pointer;
+    position: relative;
+    
+    .logout {
+      display: none;
+    }
+
+    .dropMenu {
+      width: 6rem;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #21262d;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      z-index: 100;
+      top: 1.3rem;
+      right: 0;
+
+      p {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        font-size: clamp(.9rem, 1.2rem, 1vh);
+
+        span {
+          margin-left: 0.6rem;
+        }
+      }
+    }
+  }
+}

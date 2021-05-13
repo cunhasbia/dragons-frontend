@@ -1,0 +1,106 @@
+.modalBg {
+  width: 100vw;
+  height: 100vh;
+  font-size: 90%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  .modalContainer {
+    width: 500px;
+    height: 430px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #202024;
+    border: 2px solid #21262d;
+    color: #FFF;
+    z-index: 2;
+    border-radius: 10px;
+    box-sizing: border-box;
+    
+    .modalHeader {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      height: 60px;
+      padding-left: 30px;
+      color: white;
+
+      span {
+        display: flex;
+        align-items: center;
+        color: #04AB57;
+
+        > * {
+          margin-right: 10px;
+        }
+      }
+
+      .modalCloseIcon {
+        display: flex;
+        margin-right: 40px;
+        cursor: pointer;
+        color: #da2020;
+      }
+    }
+
+    .modalInputGroup {
+      display: flex;
+      width: 80%;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-direction: column;
+      height: 100%;
+      padding: 15px;
+      border-radius: 5px;
+
+      label {
+        font-weight: 500;
+      }
+
+      .modalInput {
+        width: 90%;
+        background-color: #EEE;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #FFF;
+        margin-bottom: 1rem;
+        outline: none;
+      }
+    }
+
+    .modalButton {
+      color: #DDD;
+      padding: 10px;
+      font-weight: 500;
+      border: 1px solid #787878;
+      background-color: #04AB57;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      transition: ease-in 0.2s;
+      margin-bottom: 0.6rem;
+
+      &:disabled {
+        opacity: 0.5;
+      }
+
+      &:enabled {
+        cursor: pointer;
+      
+        &:hover {
+          background-color: #04c464;
+        }
+      }
+    }
+  }
+}

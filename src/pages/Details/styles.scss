@@ -1,0 +1,83 @@
+.pageDetails {
+  margin: .7rem auto;
+  padding: 10px;
+  max-width: 75rem;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+
+  .dragonDetailsContainer {
+    width: 68vw;
+    height: 58vh;
+    margin-top: 18vh;
+    padding: 1.5rem;
+    background-color: #202024;
+    border-radius: 10px;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: auto;
+    position: relative;
+  
+    .detailsHeader {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: clamp(.8rem, 1.1rem, 2vw);
+  
+      .arrowBack {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        color: #17BF63;
+      
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+  
+      .dragonId {
+        color: #BBB;
+      }
+    }
+  
+    .detailsMain {
+      width: 80%;
+      
+      .dragonName {
+        font-size: clamp(0.8rem, 1rem, 3vw);
+        text-align: center;
+        width: 100%;
+        border-bottom: 1px solid #323238;
+        text-transform: uppercase;
+      }
+  
+      .dragonType {
+        padding-top: 1.8rem;
+
+        span {
+          font-weight: 600;
+          color: #787878;
+        }
+      }
+    }
+  
+    .detailsFooter {
+      width: 80%;
+      margin: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid #323238;
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+      
+      span {
+        font-size: clamp(.7rem, 1rem, 1.5vw);
+        text-transform: uppercase;
+      }
+    }
+  }
+}

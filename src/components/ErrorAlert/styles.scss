@@ -1,0 +1,11 @@
+.errorDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #da2020;
+    
+    .errorMessage {
+      font-size: clamp(0.5rem, 0.8rem, 2vw);
+      margin-left: 3px;
+    }
+}

@@ -1,0 +1,65 @@
+.pageHome {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 10px 0 0 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+
+  .dragonImage {
+    position: absolute;
+    top: 11vh;
+    animation-duration: 1.8s;
+    max-width: 90vw;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .cardsContainer {
+    width: 80vw;
+    height: auto;
+    margin: 17rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    padding-top: 5rem;
+
+    .divAddDragon {
+      display: flex;
+      justify-content: flex-start;
+      z-index: 4;
+      position: absolute;
+      top: 0;
+      left: 5rem;
+  
+      .buttonAddDragon {
+        display: flex;
+        align-items: center;
+        font-size: clamp(1rem, 1.2rem, 3vw);
+        font-weight: bold;
+        border-radius: 5px;
+        padding: 0.8rem;
+        cursor: pointer;
+        color: #17BF63;
+        border: none;
+        border-radius: 10px;
+        background: transparent;
+        transition: all 0.2s;
+  
+        &:hover {
+          background: #2ea0433b;
+        }
+  
+        span {
+          margin-left: 0.8rem;
+        }
+      }
+    }
+  }
+}

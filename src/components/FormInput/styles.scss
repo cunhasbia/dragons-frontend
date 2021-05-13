@@ -1,0 +1,50 @@
+@mixin shrinkLabel {
+  top: -22px;
+  font-size: 14px;
+  color: #FFF;
+}
+
+.inputGroup {
+  position: relative;
+
+  .inputBox {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 1.7rem 0;
+    padding: 10px;
+    display: block;
+    color: #9C98A6;
+    background-color: #DDD;
+    border: none;
+    border-radius: 10px;
+    border-bottom: 1px solid #21262d;
+
+    &:focus {
+      outline: none;
+      background-color: #FFF;
+    }
+
+    &:focus ~ .inputLabel {
+      @include shrinkLabel();
+    }
+  }
+
+  input[type='password'] {
+    letter-spacing: 0.2rem;
+  }
+
+  .inputLabel {
+    color: #9C98A6;
+    font-size: clamp(.2rem, .9rem, 1.2rem);
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 8px;
+    top: 10px;
+    transition: 0.3s ease all;
+
+    &.shrink {
+      @include shrinkLabel();
+    }
+  }
+}
