@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Dragons | Front end</h1>
+  <h1>Dragons</h1>
   
   ![Javascript](https://img.shields.io/badge/-Javascript-black?style=flat-square&logo=javascript)
   ![React](https://img.shields.io/badge/-React-black?style=flat-square&logo=react)
@@ -7,7 +7,7 @@
   ![Sass](https://img.shields.io/badge/-Sass-black?style=flat-square&logo=sass)
 </div>
 
-**Dragons** is a front end application that consumes data from [Dragons API](http://5c4b2a47aa8ee500142b4887.mockapi.io/api/v1/dragon), and also consumes a [Login API]() (developed by me) for authentication of a previously registered user in database and then access the Dragons App.
+**Dragons** is a front end application that consumes data from [Dragons API](http://5c4b2a47aa8ee500142b4887.mockapi.io/api/v1/dragon), and also consumes a [Login API](https://github.com/cunhasbia/login-auth-api) (developed by me) for authentication of a previously registered user in database and then access the Dragons App.
 
 Please, go to [this login API repository](https://github.com/cunhasbia/login-auth-api) and run both projects together.
 
