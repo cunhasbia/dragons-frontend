@@ -7,12 +7,12 @@
   ![Sass](https://img.shields.io/badge/-Sass-black?style=flat-square&logo=sass)
 </div>
 
-**Dragons** is a front end application that consumes data from [Dragons API](http://5c4b2a47aa8ee500142b4887.mockapi.io/api/v1/dragon), and also consumes a [Login API](https://github.com/cunhasbia/login-auth-api) (developed by me) for authentication of a previously registered user in database and then access the Dragons App.
+**Dragons** is a front end application that consumes data from [Dragons API](http://5c4b2a47aa8ee500142b4887.mockapi.io/api/v1/dragon), and also consumes a [Login API](https://github.com/cunhasbia/dragons-login-auth-backend) (developed by me) for authentication of a previously registered user in a database and then access the Dragons App.
 
-Please, go to [this login API repository](https://github.com/cunhasbia/login-auth-api) and run both projects together.
+Please, go to [dragons-login-auth-backend](https://github.com/cunhasbia/dragons-login-auth-backend), follow the steps and run both projects together.
 
 ## Credentials (email & password)
-Please use these credentials to be able to log in the app:
+Use these credentials to log in the app:
 
 - Email: admin@admin.com
 - Password: admin123
@@ -64,7 +64,7 @@ $ yarn start
 # The app will be running on http://localhost:3000
 ```
 
-Don't forget to use the [login API](https://github.com/cunhasbia/login-auth-api) to be able to authenticate yourself in this app.
+Don't forget to use the [login API](https://github.com/cunhasbia/dragons-login-auth-backend) to be able to authenticate yourself in this app.
 
 ---
 <p align="center">Made with :orange_heart: by Bianca Cunha | Find me on <a href="https://www.linkedin.com/in/biancascunha">LinkedIn</a></p>
