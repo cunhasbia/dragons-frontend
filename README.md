@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Dragons</h1>
+  <h1>Dragons | Front end</h1>
   
   ![Javascript](https://img.shields.io/badge/-Javascript-black?style=flat-square&logo=javascript)
   ![React](https://img.shields.io/badge/-React-black?style=flat-square&logo=react)
