@@ -7,15 +7,15 @@
   ![Sass](https://img.shields.io/badge/-Sass-black?style=flat-square&logo=sass)
 </div>
 
-**Dragons** is a front end application developed with Reactjs that consumes data from [Dragons API](http://5c4b2a47aa8ee500142b4887.mockapi.io/api/v1/dragon), and also consumes a [Login API](https://github.com/cunhasbia/dragons-login-auth-backend) (made by me with Nodejs) for authenticate a user registered in the database and then access the Dragons App.
+**Dragons** is a front end application developed with Reactjs that consumes data from [Dragons API](http://5c4b2a47aa8ee500142b4887.mockapi.io/api/v1/dragon), and also consumes a [Login API](https://github.com/cunhasbia/dragons-login-auth-backend) (made by me with Nodejs) for authenticate a user registered in the database and then access the Dragons app.
 
 Please, go to [dragons-login-auth-backend](https://github.com/cunhasbia/dragons-login-auth-backend), follow the steps and run both projects together.
 
 ## Credentials (email & password)
 Use these credentials to log in the app:
 
-- Email: admin@admin.com
-- Password: admin123
+- **Email**: admin@admin.com
+- **Password**: admin123
 
 ## Application preview
 
