@@ -1,3 +1,8 @@
 export default function dateFormatter(date) {
-    return date.toString().split("T")[0];
+    const options = {
+        dateStyle: 'medium',
+        timeStyle: 'short',
+    }
+
+    return new Intl.DateTimeFormat('en-GB', options).format(new Date(date));
 };

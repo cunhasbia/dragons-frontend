@@ -6,6 +6,7 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
 import apiDragons from '../../services/apiDragons';
+import dateFormatter from '../../utils/dateFormatter';
 
 import './styles.scss';
 
@@ -16,11 +17,22 @@ export default function Details({ match }) {
   const history = useHistory();
 
   useEffect(() => {
-    (!userLogged)
-      ? history.push('/')
-      : apiDragons.get(`/${id}`)
-        .then(response => setDragonDetails(response.data))
-        .catch(error => console.log(error));
+    if (!userLogged) {
+      history.push('/');
+    }
+
+    apiDragons.get(`/${id}`)
+      .then(response => {
+        const dragon = response.data;
+        
+        const dragonFormatted = {
+          ...dragon,
+          dateFormatted: dateFormatter(dragon.createdAt)
+        }
+        
+        setDragonDetails(dragonFormatted);
+      })
+      .catch(error => console.log(error));
   }, [userLogged, history, id]);
 
   const handleClick = () => {
@@ -59,7 +71,7 @@ export default function Details({ match }) {
         </div>
 
         <div className="detailsFooter">
-          <span>Created at {dragonDetails.createdAt}</span>
+          <span>Created at {dragonDetails.dateFormatted}</span>
         </div>
       </div>
       <Footer />
